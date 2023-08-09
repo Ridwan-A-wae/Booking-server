@@ -11,7 +11,8 @@ const {
   getHotel,
   getallHotel,
   countByCity,
-  countByType
+  countByType,
+  getHotelRooms
 } = require("../controllers/hotelController");
 
 // CREATE
@@ -28,6 +29,7 @@ router.get("/", getallHotel);
 
 router.get("/countByCity", countByCity);
 router.get("/countByType", countByType);
+router.get("/room/:id", getHotelRooms);
 
 
 
